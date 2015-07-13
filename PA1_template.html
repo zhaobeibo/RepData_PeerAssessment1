@@ -162,6 +162,8 @@ nsdata.melt &lt;- melt(nsdata, id = c(&quot;date&quot;))
 nsdata.total &lt;- dcast(nsdata.melt,date ~ variable,fun.aggregate = sum)
 nsmean &lt;- mean(nsdata.total$steps)
 nsmedian &lt;- median(nsdata.total$steps)</code></pre>
+<p>Strategy for imputing missing data:</p>
+<p>Missing data is filled with the mean of the time interval in which the missing data is recorded.</p>
 <p>The total number of missing values in the dataset is 2304 .</p>
 <p>The mean of the total number of steps taken per day is 10766.1886792.</p>
 <p>The median of the total number of steps taken per day is 10766.1886792.</p>
