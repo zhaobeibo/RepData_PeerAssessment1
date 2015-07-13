@@ -133,6 +133,11 @@ nsmean <- mean(nsdata.total$steps)
 nsmedian <- median(nsdata.total$steps)
 ```
 
+Strategy for imputing missing data:
+
+Missing data is filled with the mean of the time interval in which the missing data is recorded.
+
+
 The total number of missing values in the dataset is 2304 .
 
 The mean of the total number of steps taken per day is 10766.1886792.
